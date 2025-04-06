@@ -1,0 +1,28 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Assemble Debug",
+      "type": "shell",
+      "command": ".\\gradlew.bat",
+      "args": ["app:assembleDebug"],
+      "group": "build",
+      "problemMatcher": "$gradle"
+    },
+    {
+      "label": "Run Tests",
+      "type": "shell",
+      "command": ".\\gradlew.bat",
+      "args": ["test"],
+      "group": "test",
+      "problemMatcher": "$gradle"
+    },
+    {
+      "label": "Connected Android Test",
+      "type": "shell",
+      "command": ".\\gradlew.bat",
+      "args": ["app:connectedAndroidTest"],
+      "group": "test"
+    }
+  ]
+}
