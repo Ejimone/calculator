@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Accessibility content descriptions -->
+    <string name="clear_description">Clear input</string>
+    <string name="equals_description">Calculate result</string>
+    <string name="add_description">Addition</string>
+    <string name="subtract_description">Subtraction</string>
+    <string name="multiply_description">Multiplication</string>
+    <string name="divide_description">Division</string>
+    
+    <!-- Number buttons -->
+    <string name="decimal_description">Decimal point</string>
+    <string name="zero_description">Zero</string>
+    <string name="one_description">One</string>
+    <string name="two_description">Two</string>
+    <string name="three_description">Three</string>
+    <string name="four_description">Four</string>
+    <string name="five_description">Five</string>
+    <string name="six_description">Six</string>
+    <string name="seven_description">Seven</string>
+    <string name="eight_description">Eight</string>
+    <string name="nine_description">Nine</string>
+</resources>

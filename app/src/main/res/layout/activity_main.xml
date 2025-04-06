@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="34sp"
+        android:textAlignment="textEnd"
+        android:importantForAccessibility="no"
+        android:text="0"
+        app:layout_constraintBottom_toTopOf="@id/buttons_container"
+        style="@style/Widget.MaterialComponents.TextView" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/history_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/history_item" />
+
+    <GridLayout
+        android:id="@+id/buttons_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="4"
+        android:rowCount="5">
+
+        <!-- Row 1 -->
+        <Button
+            android:id="@+id/btn_clear"
+            android:contentDescription="@string/clear_description
+            android:text="C"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_columnSpan="2"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_columnWeight="1"
+            android:textSize="24sp"
+            app:backgroundTint="@color/operator_color" />
+
+        <Button
+            android:id="@+id/btn_divide"
+            android:contentDescription="@string/divide_description
+            android:text="÷"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_columnWeight="1"
+            android:textSize="24sp"
+            app:backgroundTint="@color/operator_color" />
+
+        <Button
+            android:id="@+id/btn_multiply"
+            android:contentDescription="@string/multiply_description
+            android:text="×"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_columnWeight="1"
+            android:textSize="24sp"
+            app:backgroundTint="@color/operator_color" />
+
+        <!-- Number buttons -->
+        <Button
+            android:id="@+id/btn_7"
+            android:text="7"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_columnWeight="1"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btn_8"
+            android:text="8"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_columnWeight="1"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btn_9"
+            android:text="9"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_columnWeight="1"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btn_subtract"
+            android:text="-"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_columnWeight="1"
+            android:textSize="24sp"
+            app:backgroundTint="@color/operator_color" />
+
+        <!-- Row 4 -->
+        <Button
+            android:id="@+id/btn_1"
+            android:text="1"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_columnWeight="1"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btn_2"
+            android:text="2"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_columnWeight="1"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btn_3"
+            android:text="3"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_columnWeight="1"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btn_add"
+            android:text="+"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_columnWeight="1"
+            android:textSize="24sp"
+            app:backgroundTint="@color/operator_color" />
+
+        <!-- Row 5 -->
+        <Button
+            android:id="@+id/btn_0"
+            android:contentDescription="@string/zero_description
+            android:text="0"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_columnSpan="2"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_columnWeight="1"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btn_decimal"
+            android:text="."
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_columnWeight="1"
+            android:textSize="24sp" />
+
+        <!-- Continue similar pattern for 4-6, 1-3, 0 -->
+        <!-- Include remaining number buttons and equals -->
+        
+        <Button
+            android:id="@+id/btn_equals"
+            android:text="="
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="1"
+            android:textSize="24sp"
+            app:backgroundTint="@color/equals_color" />
+
+    </GridLayout>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base colors -->
+    <color name="color_primary">#2196F3</color>
+    <color name="color_primary_dark">#1976D2</color>
+    <color name="color_secondary">#FF4081</color>
+    
+    <!-- Calculator specific colors -->
+    <color name="operator_color">@color/color_secondary</color>
+    <color name="equals_color">#4CAF50</color>
+    
+    <!-- Text/background colors -->
+    <color name="display_background">#FFFFFF</color>
+    <color name="button_text">#212121</color>
+</resources>
